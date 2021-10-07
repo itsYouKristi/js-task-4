@@ -42,9 +42,9 @@ const tokens = {
 
 /**
  * 
- * @param {*} tokens список токенов
+ * @param {*} token токен
  */
-function Coin(tokens) { }
+function Coin(token) { }
 
 /**
  * 

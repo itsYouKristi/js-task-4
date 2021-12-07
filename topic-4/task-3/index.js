@@ -13,6 +13,7 @@ let hamster = {
 
 function getSpeedy() {
     let speedy = {
+        stomach: [],
         __proto__: hamster
     };
 
@@ -21,6 +22,7 @@ function getSpeedy() {
 
 function getLazy() {
     let lazy = {
+        stomach: [],
         __proto__: hamster
     };
 
@@ -36,4 +38,5 @@ console.log(getLazy().stomach); // apple
 
 
 module.exports.getSpeedy = getSpeedy;
+module.exports.getLazy = getLazy;
 module.exports.getLazy = getLazy;

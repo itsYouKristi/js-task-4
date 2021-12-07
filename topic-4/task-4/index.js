@@ -8,36 +8,34 @@ function getHead() {
     let head = {
         glasses: 1
     };
-
     return head;
 }
-
 function getTable() {
     let table = {
         pen: 3,
+        __proto__: getHead()
     };
-    
+
     return table;
 }
-
 function getBed() {
     let bed = {
         sheet: 1,
         pillow: 2,
+        __proto__: getTable()
     };
 
     return bed;
 }
-
 function getPockets() {
     let pockets = {
         money: 2000,
+        __proto__: getBed()
     };
-    
+
 
     return pockets;
 }
-
 module.exports.getHead = getHead;
 module.exports.getTable = getTable;
 module.exports.getBed = getBed;
